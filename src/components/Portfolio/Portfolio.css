@@ -1,0 +1,89 @@
+.main__portfolio {
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 100px;
+}
+.main__portfolio__caption {
+  font-size: 64px;
+  font-weight: 700;
+  margin-bottom: 25px;
+}
+.main__portfolio__elements {
+    width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.portfolio-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+.portfolio-element {
+  width: 550px;
+  height: 300px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 25px 25px;
+}
+#boomcorn{
+  background-image: url(../../img/project-1.jpg);
+}
+#e-shop{
+  background-image: url(../../img/project-2.jpg);
+}
+#student-gov{
+  background-image: url(../../img/project-3.jpg);
+}
+#woods{
+  background-image: url(../../img/project-4.jpg);
+}
+
+
+.portfolio-hover{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: 0.5s;
+    font-size: 0px;
+    color: #FD5956;
+    font-weight: 700;
+}
+.portfolio-element:hover .portfolio-hover{
+    width: 100%;
+    height: 100%;
+    background-color: #ffffff;
+    opacity: 0.8;
+    font-size: 32px;
+    cursor: pointer;
+}
+@media screen and (max-width: 1440px) {
+  .main__portfolio__caption {
+    font-size: 48px;
+  }
+  .main__portfolio__elements {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 700px) {
+  .main__portfolio{
+    padding: 50px 0px;
+  }
+  .main__portfolio__caption{
+    font-size: 32px;
+  }
+}
+@media screen and (max-width: 650px) {
+  .portfolio-element{
+    width: 300px;
+  }
+}
