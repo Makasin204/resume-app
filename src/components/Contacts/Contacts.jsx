@@ -89,7 +89,7 @@ export default function Contacts() {
             <input type="text" placeholder="Your name" className="input-1" id="input-name" />
             <input type="email" placeholder="Your email" className="input-1" id="input-email" />
           </div>
-          <textarea placeholder="Message" className="input-2" id="input-message" />
+          <textarea placeholder="Your message" className="input-2" id="input-message" />
           <button type="button" className="submit-button">
             Send
           </button>

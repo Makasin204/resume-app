@@ -30,40 +30,42 @@
     top: 5%;
   }
 }
-  body {
-    background-color: #fffafa;
+
+.box {
+  position: fixed;
+  top: 0;
+  transform: rotate(80deg);
+  left: 0;
+  z-index: -1;
+}
+
+.wave {
+  position: absolute;
+  opacity: 0.4;
+  width: 1500px;
+  height: 1300px;
+  margin-left: -150px;
+  margin-top: -250px;
+  border-radius: 43%;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
   }
-  .box {
-    position: fixed;
-    top: 0;
-    transform: rotate(80deg); 
-    left: 0;
-    z-index: -1;
+  from {
+    transform: rotate(360deg);
   }
-  
-  .wave {
-    position: absolute;
-    opacity: .4;
-    width: 1500px;
-    height: 1300px;
-    margin-left: -150px;
-    margin-top: -250px;
-    border-radius: 43%;
-  }
-  
-  @keyframes rotate {
-    from {transform: rotate(0deg);}
-    from {transform: rotate(360deg);}
-  }
-  
-  .wave.-one {
-    animation: rotate 10000ms infinite linear;
-    opacity: 5%;
-    background: #ff8b89;
-  }
-  
-  .wave.-two {
-    animation: rotate 6000ms infinite linear;
-    opacity: 10%;
-    background: #feaba9;
-  }
+}
+
+.wave.-one {
+  animation: rotate 10000ms infinite linear;
+  opacity: 5%;
+  background: #ff8b89;
+}
+
+.wave.-two {
+  animation: rotate 6000ms infinite linear;
+  opacity: 10%;
+  background: #feaba9;
+}

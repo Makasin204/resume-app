@@ -41,6 +41,12 @@ header {
   line-height: 100px;
   font-weight: 400;
   text-align: center;
+  transition-property: font-weight;
+  transition-duration: 0.3s;
+}
+li:hover{
+  cursor: pointer;
+  font-weight: 700;
 }
 /* .lang{} */
 .theme-switch{

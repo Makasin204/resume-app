@@ -83,6 +83,8 @@
   font-size: 16px;
   padding: 16px;
   border-radius: 15px;
+  background-color: rgba(255, 255, 255, 0.5);
+  
 }
 .input-1:nth-child(1) {
   margin-right: 50px;
@@ -97,6 +99,11 @@
   line-height: 30px;
   margin-top: 50px;
   margin-bottom: 50px;
+  background-color: rgba(255, 255, 255, 0.5);
+
+}
+textarea {
+  resize: none;
 }
 .submit-button {
   width: 200px;
@@ -130,6 +137,9 @@
   }
   .form{
     margin-bottom: 100px;
+  }
+  .main__contacts {
+    padding: 100px 0px;
   }
 }
 @media screen and (max-width: 700px) {
